@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+          <div id="scratch"></div>
+
+          <!-- url https://github.com/websanova/wScratchPad -->
+          <script src="https://code.jquery.com/jquery-2.2.4.js"
+                    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+          <script src="./wScratchPad.min.js"></script>
+          <script>
+                    $('#scratch').wScratchPad({
+                              size: 100,          // The size of the brush/scratch.
+                              bg: './image/starwars.jpg',  // Background (image path or hex color).
+                              fg: '#6699ff',  // Foreground (image path or hex color).
+                              //   realtime    : true,       // Calculates percentage in realitime.
+                              //   scratchDown : null,       // Set scratchDown callback.
+                              //   scratchUp   : null,       // Set scratchUp callback.
+                              //   scratchMove : null,       // Set scratcMove callback.
+                              cursor: '' // Set cursor.
+                    });
+          </script>
+
+</body>
+
+</html>
